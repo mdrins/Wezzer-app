@@ -61,7 +61,6 @@ def compare_cities(city1, city2):
         ax.set_xlabel("Pilsēta")
         ax.set_ylabel("Temperatūra (°C)")
 
-        # Embed the plot in the Tkinter window
         for widget in frame_compare.winfo_children():
             if isinstance(widget, FigureCanvasTkAgg):
                 widget.get_tk_widget().destroy()
